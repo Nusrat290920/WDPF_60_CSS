@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag,ID and class selector</title>
+    <h3>Tag Selector</h3>
+
+    <style>
+        h3{
+            color: brown;
+        }
+        p {
+            text-align: right;
+        }
+        #featured {
+            border: 1px solid green;
+            padding: 10px;
+            text-align: justify;
+        }
+        .article {
+            background-color: aquamarine;
+            line-height: 25px;
+            padding: 30px;
+
+        }
+       div p {
+            text-align: justify;
+            background-color: rgb(43, 70, 226);
+            line-height: 30px;
+            color: aliceblue;
+            padding: 10px;
+            div p {
+
+            }
+
+        }
+    </style>
+    
+
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, minus?</p>
+    <hr>
+    <h3>ID selector</h3>
+    <p id="featured">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, accusantium?</p>
+    <hr>
+    <p class="article">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, nisi!</p>
+    <h1>Nested Seletion</h1>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, fugit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, soluta.</p>
+    </div>
+    
