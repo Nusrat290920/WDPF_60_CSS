@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://127.0.0.1:5501/navigation_menu.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML menu</title>
+    <style>
+         .First ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .First ul li a{
+            text-decoration: none;
+            width: 65px;
+            background-color: aquamarine;
+            display: block;
+            padding: 8px 16px;
+        }
+        .First ul li a:hover{
+            background-color: black;
+            color: white;
+        }
+         .First ul li a.active{
+            background-color: brown;
+            color: white;
+        }
+
+        
+    </style>
+</head>
+<body> <hr>
+    <h3>Vertical menu</h3>
+    <div class="First">
+        <ul>
+            <li><a href="http://127.0.0.1:5501/navigation_menu.html" class="active">Home</a></li>
+            <li><a href="http://127.0.0.1:5501/navigation_menu.html">About</a></li>
+            <li><a href="http://127.0.0.1:5501/navigation_menu.html">Activities</a></li>
+            <li><a href="http://127.0.0.1:5501/navigation_menu.html">Contact</a></li>
+    </ul></div>
+    <hr>
+    <style>
+    
+    .second ul{
+        list-style-type: none;
+            margin: left;
+            padding: 0;
+
+    }
+    .second ul li a{
+            text-decoration: none;
+            width: 65px;
+            background-color: rgb(195, 191, 231);
+            display:block;
+            padding: 12px 20px;
+            margin-right: 10px;
+            float: left;
+            text-align: center;
+         }
+         .second ul li a.active{
+            background-color: brown;
+            color: white;
+        }
+        .second ul li a:hover{
+            background-color:blue;
+            color:white;
+        }
+
+    
+    </style>
+
+
+
+
+
+
+
+
+    <h3>Horizontal/Navigation menu</h3>
+    <div class="second">
+    <ul>
+        <li><a href="http://127.0.0.1:5501/navigation_menu.html" class="active">Home</a></li>
+        <li><a href="http://127.0.0.1:5501/navigation_menu.html">About</a></li>
+        <li><a href="http://127.0.0.1:5501/navigation_menu.html">Contact</a></li>
+        <li><a href="http://127.0.0.1:5501/navigation_menu.html">Activities</a></li>
+    </ul>
+        
+    
+    </div>
+   
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
