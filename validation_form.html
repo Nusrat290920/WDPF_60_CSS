@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:required{
+            background-color: rgb(100, 242, 242);
+        }
+        input[type="text"]:optional{
+            background-color: rgb(104, 103, 103);
+        }
+        input:valid{
+            background-color: green;
+            color: azure;
+        }
+        input:invalid{
+            background-color: green;
+            color: rgb(8, 8, 8);
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="text" name="fullname" required placeholder="Enter name">
+        <input type="text" name="Father"  placeholder="Enter father name">
+        <input type="text" name="Age" required placeholder="Enter age">
+        <input type="text" name="DOB" placeholder="Enter DOB">
+        <input type="text" name="Blood group" required placeholder="Enter blood group">
+    </form>
+</body>
+</html> 
